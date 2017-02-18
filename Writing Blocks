@@ -1,0 +1,24 @@
+Developing out-of-tree (OOT) modules and writing blocks
+
+When you need a block that's not available in GRC, you can write one yourself.
+
+Lots of OOT modules have already been made at the Comprehensive GNU Radio Archive Network: http://cgran.org  
+
+CGRAN projects are all available through PyBOMBS (Python Build Overlay Managed Bundle System) - the GNU Radio install management system for pulling in out-of-tree projects: http://gnuradio.org/redmine/projects/pybombs/wiki
+
+Sample OOT block code: http://gnuradio.org/redmine/projects/gnuradio/repository/entry/gr-blocks/python/blocks/qa_block_gateway.py
+
+Block coding guide: http://gnuradio.org/redmine/projects/gnuradio/wiki/BlocksCodingGuide
+
+Basic steops to build blocks and out-of-tree modules:
+1.Create (do this once per module): gr_modtool create MODULENAME
+2.Add a block to the module: gr_modtool add BLOCKNAME
+3.Create a build directory: mkdir build/
+4.Invoke the make process: cd build && cmake <OPTIONS> ../ && make (Note that you only have to call cmake if you've changed the CMake files)
+5.Invoke the testing: make test or ctest or ctest -V for more verbosity
+6.Install (only when everything works and no tests fail): sudo make install
+7.Ubuntu users: reload the libs: sudo ldconfig
+8.Delete blocks from the source tree: gr_modtool rm REGEX
+9.Disable blocks by removing them from the CMake files: gr_modtool disable REGEX
+
+
