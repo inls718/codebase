@@ -2,4 +2,5 @@ Add TODOs
 TODO #1: Create of out-of-tree module
 TODO #2: Create a GNU Radio Welcome message pop-up
 TODO #3: Create option for if you are new user or experienced user
-TODO #4: Research meaning of field bcakgrounds that change when user input changes.
+TODO #4: Research meaning of field backgrounds that change when user input changes.
+TODO #5: Searching term should also match with category, not just blocks' name.
