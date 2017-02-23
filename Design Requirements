@@ -7,3 +7,4 @@ TODO #5: Research meaning of field backgrounds that change when user input chang
 TODO #6: Search term should also match with category, not just blocks' name.
 TODO #7: Research how to add documentation to block properties (i.e., there's a lot of blank, gray space)
 TODO #8: Modify/make better the tool tip(s) or provide more user friendly comments when the user scrolls over text.
+TODO #9: Create requirement list of what user must know to be able to create flowgraph
