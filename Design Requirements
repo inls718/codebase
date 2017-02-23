@@ -4,5 +4,6 @@ TODO #2: Create a GNU Radio Welcome message pop-up
 TODO #3: List/express required knowledge in order to use program successfully (mostly for new users)
 TODO #4: Create option for if you are new user or experienced user
 TODO #5: Research meaning of field backgrounds that change when user input changes.
-TODO #6: Searching term should also match with category, not just blocks' name.
+TODO #6: Search term should also match with category, not just blocks' name.
 TODO #7: Research how to add documentation to block properties (i.e., there's a lot of blank, gray space)
+TODO #8: Modify/make better the tool tip(s) or provide more user friendly comments when the user scrolls over text.
