@@ -5,4 +5,7 @@ TODO #3: List/express required knowledge in order to use program successfully (m
 TODO #4: Create option for if you are new user or experienced user
 TODO #5: Search term should also match with category, not just blocks' name.
 TODO #6: Modify/make better the tool tip(s) or provide more user friendly comments when the user scrolls over text.
+The use of some short text/one liners/or better understandable alternate text or options for the users would make the interface more
+user-friendly. The use of some explanatory comments for words that might give rise to some confusion as a hover option might help make 
+things easier for the user.
 TODO #7: Create requirement list of what user must know to be able to create flowgraph
