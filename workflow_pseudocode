@@ -14,3 +14,5 @@
 
 Function: selectSDR
 sdrName = #get name of SDR selected by user (e.g. hackRF)
+#change the style of the "Radio 1"/"Radio 2"/etc. button that the user clicked on 
+  #to reflect the SDR option that they selected. (E.g. Go from a "Raised" button style to a "Sunken" button style.)
