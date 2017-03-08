@@ -1,0 +1,16 @@
+# Add your pseudocode to this file!
+# I included a starter workflow based on fhouyang's IMG_4020.jpg upload. Please integrate elements from other workflows, as well.
+# It might be helpful to include a list of which workflows we have integrated so far. (So I will start a list.)
+
+# Workflows integrated so far:
+# IMG_4020.jpg (from fhouyang)
+# ## ^^Please add to this list above if you integrate another workflow! ##
+
+# Welcome screen/SDR selection:
+"Radio 1" (button for SDR selection): command = selectSDR (see selectSDR function definition below)
+"Radio 2" (button for SDR selection): command = selectSDR
+"Radio 3" (button for SDR selection): command = selectSDR
+"Radio 4" (button for SDR selection): command = selectSDR
+
+Function: selectSDR
+sdrName = #get name of SDR selected by user (e.g. hackRF)
