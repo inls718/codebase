@@ -11,8 +11,17 @@
 "Radio 2" (button for SDR selection): command = selectSDR
 "Radio 3" (button for SDR selection): command = selectSDR
 "Radio 4" (button for SDR selection): command = selectSDR
+# ^This workflow did not integrate a "next" button, but other workflows do include one, so I am going ahead and putting it here:
+"Next" (button for confirming selection and moving to next screen): command = confirmSDR
 
 Function: selectSDR
 sdrName = #get name of SDR selected by user (e.g. hackRF)
 #change the style of the "Radio 1"/"Radio 2"/etc. button that the user clicked on 
   #to reflect the SDR option that they selected. (E.g. Go from a "Raised" button style to a "Sunken" button style.)
+
+Function: confirmSDR
+If SDR is selected:
+  #set device to sdrName....wherever it's needed for the next steps?
+  #move to next screen of Wizard
+else (i.e. no SDR selected; user clicked "next" without choosing any radio):
+  display message: "Please select a radio."
