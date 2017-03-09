@@ -6,6 +6,7 @@
 # IMG_4020.jpg (from fhouyang)
 # Riegel_GNU Diagram 1.jpg (from julieriegel - in "Interaction IX" folder)
 # Riegel_GNU Diagram 2.jpg (from julieriegel - in "Interaction IX" folder)
+# Riegel_GNU Diagram 3.jpg (from julieriegel - in "Interaction IX" folder)
 # ## ^^Please add to this list above if you integrate another workflow! ##
 
 # Welcome screen/SDR selection:
@@ -56,3 +57,5 @@ if popsup == true:
     # generate charts according to the finished config
 else:
     # open new work file
+    # Riegel_GNU Diagram 3.jpg
+    # if wizard does not pop up, user can search for wizard in search bar
