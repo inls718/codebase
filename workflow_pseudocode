@@ -28,7 +28,7 @@ If SDR is selected:
 else (i.e. no SDR selected; user clicked "next" without choosing any radio):
   display message: "Please select a radio."
 
-# Riegel_GNU Diagram 1.jpg (from julieriegel, master branch of Interaction-IX)
+# Riegel_GNU Diagram 1.jpg, Riegel_GNU Diagram 2.jpg (from julieriegel, master branch of Interaction-IX)
 Opens GNU Radio
 if popsup == true:
     pops up the wizard
