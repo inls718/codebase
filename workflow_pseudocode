@@ -4,7 +4,8 @@
 
 # Workflows integrated so far:
 # IMG_4020.jpg (from fhouyang)
-# Riegel_GNU Diagram 1.jpg (from julieriegel)
+# Riegel_GNU Diagram 1.jpg (from julieriegel - in "Interaction IX" folder)
+# Riegel_GNU Diagram 2.jpg (from julieriegel - in "Interaction IX" folder)
 # ## ^^Please add to this list above if you integrate another workflow! ##
 
 # Welcome screen/SDR selection:
@@ -36,6 +37,8 @@ if popsup == true:
         if step == 0:
             show wizard welcome page
             # require actions to move to the next step
+            # users have two actions: 1) receive, 2) send and receive
+            # users should not be able to only send
             if click next:
                 step += 1
             elif click previous:
