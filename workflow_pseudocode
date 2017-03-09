@@ -31,7 +31,7 @@ else (i.e. no SDR selected; user clicked "next" without choosing any radio):
 
 # Riegel_GNU Diagram 1.jpg, Riegel_GNU Diagram 2.jpg (from julieriegel, master branch of Interaction-IX)
 Opens GNU Radio
-if popsup == true:
+if popsup == true:  # popsup is a boolean. if user check "don't show again" in previous sessions, change popsup to false
     pops up the wizard
     step = 0
     while exit_wizard != true:
