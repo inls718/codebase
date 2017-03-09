@@ -50,6 +50,7 @@ if popsup == true:
             # require actions to move to the next step
         if finish:
             request suggestion for FAQ
+            # include URL or links to tutorials (CGRAN, PyBOMBS)
             exit wizard
     # open new work file
     # generate charts according to the finished config
