@@ -4,7 +4,6 @@
 
 # Workflows integrated so far:
 # IMG_4020.jpg (from fhouyang)
-# Riegel_GNU Diagram 1.jpg (from julieriegel)
 # ## ^^Please add to this list above if you integrate another workflow! ##
 
 # Welcome screen/SDR selection:
@@ -26,29 +25,3 @@ If SDR is selected:
   #move to next screen of Wizard
 else (i.e. no SDR selected; user clicked "next" without choosing any radio):
   display message: "Please select a radio."
-
-# Riegel_GNU Diagram 1.jpg (from julieriegel, master branch of Interaction-IX)
-Opens GNU Radio
-if popsup == true:
-    pops up the wizard
-    step = 0
-    while exit_wizard != true:
-        if step == 0:
-            show wizard welcome page
-            # require actions to move to the next step
-            if click next:
-                step += 1
-            elif click previous:
-                step -= 1
-            elif click exit:
-                break
-        if step == 1:  # same for every step
-            show the ui associate with the step
-            # require actions to move to the next step
-        if finish:
-            request suggestion for FAQ
-            exit wizard
-    # open new work file
-    # generate charts according to the finished config
-else:
-    # open new work file
