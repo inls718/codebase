@@ -59,8 +59,7 @@ else:
     # Riegel_GNU Diagram 3.jpg
     # if wizard does not pop up, user searches for wizard in search bar
     # user drags in wizard block, which sets popups == true
-    if popsup == true:  # popsup is a boolean.  if user check "don't show again" in previous sessions, change popsup to false
-        pops up the wizard
+    if popsup == true:  # popsup is a boolean. 
     step = 0
     while exit_wizard != true:
         if step == 0:
