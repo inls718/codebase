@@ -10,6 +10,7 @@
 # ## ^^Please add to this list above if you integrate another workflow! ##
 
 # Welcome screen/SDR selection:
+"?"/"Help" (button linking to either internal or external documentation (URL) on GNURadio)
 "Radio 1" (button for SDR selection): command = selectSDR (see selectSDR function definition below)
 "Radio 2" (button for SDR selection): command = selectSDR
 "Radio 3" (button for SDR selection): command = selectSDR
