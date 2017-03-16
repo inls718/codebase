@@ -1,0 +1,92 @@
+# Add your pseudocode to this file!
+# I included a starter workflow based on fhouyang's IMG_4020.jpg upload. Please integrate elements from other workflows, as well.
+# It might be helpful to include a list of which workflows we have integrated so far. (So I will start a list.)
+
+# Workflows integrated so far:
+# IMG_4020.jpg (from fhouyang)
+# Riegel_GNU Diagram 1.jpg (from julieriegel - in "Interaction IX" folder)
+# Riegel_GNU Diagram 2.jpg (from julieriegel - in "Interaction IX" folder)
+# Riegel_GNU Diagram 3.jpg (from julieriegel - in "Interaction IX" folder)
+# ## ^^Please add to this list above if you integrate another workflow! ##
+
+# Welcome screen/SDR selection:
+"?"/"Help" (button linking to either internal or external documentation (URL) on GNURadio)
+"Radio 1" (button for SDR selection): command = selectSDR (see selectSDR function definition below)
+"Radio 2" (button for SDR selection): command = selectSDR
+"Radio 3" (button for SDR selection): command = selectSDR
+"Radio 4" (button for SDR selection): command = selectSDR
+# ^This workflow did not integrate a "next" button, but other workflows do include one, so I am going ahead and putting it here:
+"Next" (button for confirming selection and moving to next screen): command = confirmSDR
+
+# Choose a project screen:
+"?"/"Help" (button linking to either internal or external documentation (URL) on GNURadio)
+"FM Radio" (button to start FM radio project): command = initiateFMRadio
+"Airplane tracker" (button to start airplane tracker project): command = initiateAirplaneTracker...(no actual function written for this one)
+# Can add more projects.
+
+Function: selectSDR
+sdrName = #get name of SDR selected by user (e.g. hackRF)
+#change the style of the "Radio 1"/"Radio 2"/etc. button that the user clicked on 
+  #to reflect the SDR option that they selected. (E.g. Go from a "Raised" button style to a "Sunken" button style.)
+
+Function: confirmSDR
+If SDR is selected:
+  #set device to sdrName....wherever it's needed for the next steps?
+  #move to next screen of Wizard (i.e. "Choose a project" screen)
+else (i.e. no SDR selected; user clicked "next" without choosing any radio):
+  display message: "Please select a radio."
+
+# Riegel_GNU Diagram 1.jpg, Riegel_GNU Diagram 2.jpg (from julieriegel, master branch of Interaction-IX)
+Opens GNU Radio
+if popsup == true:  # popsup is a boolean. if user check "don't show again" in previous sessions, change popsup to false
+    pops up the wizard
+    step = 0
+    while exit_wizard != true:
+        if step == 0:
+            show wizard welcome page
+            # require actions to move to the next step
+            # users have two actions: 1) receive, 2) send and receive
+            # users should not be able to only send
+            if click next:
+                step += 1
+            elif click previous:
+                step -= 1
+            elif click exit:
+                break
+        if step == 1:  # same for every step
+            show the ui associate with the step
+            # require actions to move to the next step
+        if finish:
+            request suggestion for FAQ
+            # include URL or links to tutorials (CGRAN, PyBOMBS)
+            exit wizard
+    # open new work file
+    # generate charts according to the finished config
+else:
+    # Riegel_GNU Diagram 3.jpg
+    # if wizard does not pop up, user searches for wizard in search bar
+    # user drags in wizard block, which sets popups == true
+    if popsup == true:  # popsup is a boolean. 
+    step = 0
+    while exit_wizard != true:
+        if step == 0:
+            show wizard welcome page
+            # require actions to move to the next step
+            # users have two actions: 1) receive, 2) send and receive
+            # users should not be able to only send
+            if click next:
+                step += 1
+            elif click previous:
+                step -= 1
+            elif click exit:
+                break
+        if step == 1:  # same for every step
+            show the ui associate with the step
+            # require actions to move to the next step
+        if finish:
+            request suggestion for FAQ
+            # include URL or links to tutorials (CGRAN, PyBOMBS)
+            exit wizard
+    # open new work file
+    # generate charts according to the finished config
+    
