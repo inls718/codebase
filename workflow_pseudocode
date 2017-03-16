@@ -18,6 +18,12 @@
 # ^This workflow did not integrate a "next" button, but other workflows do include one, so I am going ahead and putting it here:
 "Next" (button for confirming selection and moving to next screen): command = confirmSDR
 
+# Choose a project screen:
+"?"/"Help" (button linking to either internal or external documentation (URL) on GNURadio)
+"FM Radio" (button to start FM radio project): command = initiateFMRadio
+"Airplane tracker" (button to start airplane tracker project): command = initiateAirplaneTracker...(no actual function written for this one)
+# Can add more projects.
+
 Function: selectSDR
 sdrName = #get name of SDR selected by user (e.g. hackRF)
 #change the style of the "Radio 1"/"Radio 2"/etc. button that the user clicked on 
@@ -26,7 +32,7 @@ sdrName = #get name of SDR selected by user (e.g. hackRF)
 Function: confirmSDR
 If SDR is selected:
   #set device to sdrName....wherever it's needed for the next steps?
-  #move to next screen of Wizard
+  #move to next screen of Wizard (i.e. "Choose a project" screen)
 else (i.e. no SDR selected; user clicked "next" without choosing any radio):
   display message: "Please select a radio."
 
