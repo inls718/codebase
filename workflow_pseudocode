@@ -25,9 +25,11 @@
 # Can add more projects (dev). Each project can have its own initate function that puts in preset blocks/variables.
 
 # FM Source selection screen:
+pagesCompleted = 0  # This is the same as the initial value, but on the next screen it would be 1, etc.
 # display potential source blocks the user can choose from when building their radio:
 "Source block 1" (button to trigger display of Source block 1 explanation and variable selections)
 "Source block 2" (button to trigger display of Source block 2 explanation and variable selections)
+#Progress Bar: calculateProgress(pagesCompleted)
 
 Variables to intiate:
 pagesCompleted = 0  # for Progress Bar: number of pages (screens) the user has completed in their selected project.
