@@ -20,9 +20,14 @@
 
 # Choose a project screen:
 "?"/"Help" (button linking to either internal or external documentation (URL) on GNURadio)
-"FM Radio" (button to start FM radio project): command = initiateFMRadio
+"FM Radio" (button to start FM radio project): command = initiateFMSource
 "Airplane tracker" (button to start airplane tracker project): command = initiateAirplaneTracker...(no actual function written for this one)
 # Can add more projects (dev). Each project can have its own initate function that puts in preset blocks/variables.
+
+# FM Source selection screen:
+# display potential source blocks the user can choose from when building their radio:
+"Source block 1" (button to trigger display of Source block 1 explanation and variable selections)
+"Source block 2" (button to trigger display of Source block 2 explanation and variable selections)
 
 Variables to intiate:
 pagesCompleted = 0  # for Progress Bar: number of pages (screens) the user has completed in their selected project.
@@ -42,8 +47,9 @@ If SDR is selected:
 else (i.e. no SDR selected; user clicked "next" without choosing any radio):
   display message: "Please select a radio."
 
-Function: initiateFMRadio
-# add 1 to pagesCompleted
+Function: initiateFMSource
+global totalPages = 4   # Pretend there are four pages/screens the user needs to complete to build FM radio
+# move to next screen of Wizard for FM Radio (i.e. #FM Source Screen)
 
 # Riegel_GNU Diagram 1.jpg, Riegel_GNU Diagram 2.jpg (from julieriegel, master branch of Interaction-IX)
 Opens GNU Radio
