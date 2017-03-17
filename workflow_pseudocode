@@ -33,7 +33,7 @@ Variables to intiate:
 pagesCompleted = 0  # for Progress Bar: number of pages (screens) the user has completed in their selected project.
 totalPages = 1  # for Progress Bar: number of pages (screens) user needs to fill out before their selected project is complete
                 # start at 1 so we don't accidentally divide by 0 when calculating progress.
-progressBar = 0  # initiate Progress Bar
+progressBar = 0  # initial value for Progress Bar
 
 Function: selectSDR
 sdrName = #get name of SDR selected by user (e.g. hackRF)
@@ -50,6 +50,10 @@ else (i.e. no SDR selected; user clicked "next" without choosing any radio):
 Function: initiateFMSource
 global totalPages = 4   # Pretend there are four pages/screens the user needs to complete to build FM radio
 # move to next screen of Wizard for FM Radio (i.e. #FM Source Screen)
+
+Function: calculateProgress(pagesCompleted)
+progressBar = pagesCompleted/totalPages  #update pagesCompleted with each page/screen the user progresses to in their project
+# display progressBar (graphically)
 
 # Riegel_GNU Diagram 1.jpg, Riegel_GNU Diagram 2.jpg (from julieriegel, master branch of Interaction-IX)
 Opens GNU Radio
