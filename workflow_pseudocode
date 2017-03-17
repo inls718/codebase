@@ -22,7 +22,13 @@
 "?"/"Help" (button linking to either internal or external documentation (URL) on GNURadio)
 "FM Radio" (button to start FM radio project): command = initiateFMRadio
 "Airplane tracker" (button to start airplane tracker project): command = initiateAirplaneTracker...(no actual function written for this one)
-# Can add more projects.
+# Can add more projects (dev). Each project can have its own initate function that puts in preset blocks/variables.
+
+Variables to intiate:
+pagesCompleted = 0  # for Progress Bar: number of pages (screens) the user has completed in their selected project.
+totalPages = 1  # for Progress Bar: number of pages (screens) user needs to fill out before their selected project is complete
+                # start at 1 so we don't accidentally divide by 0 when calculating progress.
+progressBar = 0  # initiate Progress Bar
 
 Function: selectSDR
 sdrName = #get name of SDR selected by user (e.g. hackRF)
@@ -35,6 +41,9 @@ If SDR is selected:
   #move to next screen of Wizard (i.e. "Choose a project" screen)
 else (i.e. no SDR selected; user clicked "next" without choosing any radio):
   display message: "Please select a radio."
+
+Function: initiateFMRadio
+# add 1 to pagesCompleted
 
 # Riegel_GNU Diagram 1.jpg, Riegel_GNU Diagram 2.jpg (from julieriegel, master branch of Interaction-IX)
 Opens GNU Radio
