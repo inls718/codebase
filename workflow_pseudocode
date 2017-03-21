@@ -31,6 +31,10 @@ pagesCompleted = 0  # This is the same as the initial value, but on the next scr
 "Source block 2" (button to trigger display of Source block 2 explanation and variable selections)
 #Progress Bar: calculateProgress(pagesCompleted)
 
+#explanation of sink block
+#what does the sink block show/display
+
+
 Variables to intiate:
 pagesCompleted = 0  # for Progress Bar: number of pages (screens) the user has completed in their selected project.
 totalPages = 1  # for Progress Bar: number of pages (screens) user needs to fill out before their selected project is complete
