@@ -34,6 +34,8 @@ pagesCompleted = 0  # This is the same as the initial value, but on the next scr
 #explanation of sink block
 #what does the sink block show/display
 
+#explain how the type of output from one block must match the input of the sink block
+
 
 Variables to intiate:
 pagesCompleted = 0  # for Progress Bar: number of pages (screens) the user has completed in their selected project.
