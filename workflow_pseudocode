@@ -57,6 +57,16 @@ Function: calculateProgress(pagesCompleted)
 progressBar = pagesCompleted/totalPages  #update pagesCompleted with each page/screen the user progresses to in their project
 # display progressBar (graphically)
 
+Function: useraction (to determine previous, next, or exit page)
+# display on the bottom of each screen
+if click next:
+  step += 1
+elif click previous:
+  step -= 1
+elif click exit:
+  break
+
+
 # Riegel_GNU Diagram 1.jpg, Riegel_GNU Diagram 2.jpg (from julieriegel, master branch of Interaction-IX)
 Opens GNU Radio
 if popsup == true:  # popsup is a boolean. if user check "don't show again" in previous sessions, change popsup to false
