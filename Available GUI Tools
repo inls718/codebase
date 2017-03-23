@@ -2,7 +2,7 @@ QT GUI List:
 1 Checkbox: adds a check box
 2 Chooser: adds a drop-down menu
 3 Entry: adds a one-line text box
-4 Label: gray text
+4 Label: gray text (display text; not interactive)
 5 Message Editor: adds a multiple-line text box
 6 Push Botton
 7 Range
