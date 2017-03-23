@@ -4,6 +4,6 @@ QT GUI List:
 3 Entry: adds a one-line text box
 4 Label: gray text
 5 Message Editor: adds a multiple-line text box
-6 Push Botton
-7 Range
+6 Push Button: displays large gray button
+7 Range: Slider with number box on right that corresponds to slider location
 8 Tab Widget
