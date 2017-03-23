@@ -1,6 +1,6 @@
 QT GUI List:
-1 Checkbox
-2 Chooser
+1 Checkbox: adds a check box
+2 Chooser: adds a drop-down menu
 3 Entry
 4 Label
 5 Message Editor
