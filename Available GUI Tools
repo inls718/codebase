@@ -6,4 +6,4 @@ QT GUI List:
 5 Message Editor: adds a multiple-line text box
 6 Push Button: displays large gray button
 7 Range: Slider with number box on right that corresponds to slider location
-8 Tab Widget
+8 Tab Widget: selectable tab for different widgets 
