@@ -12,4 +12,8 @@ Details of each block:
 
 1 Checkbox:
 GRC XML file: https://github.com/inls718/gnuradio/blob/master/gr-qtgui/grc/qtgui_check_box.xml
-Python file: 
+Python file: still looking...
+
+2 Chooser:
+GRC XML file: https://github.com/inls718/gnuradio/blob/master/gr-qtgui/grc/qtgui_chooser.xml
+Python file: still looking...
