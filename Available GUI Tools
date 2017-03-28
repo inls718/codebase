@@ -8,7 +8,9 @@ QT GUI List:
 7 Range: Slider with number box on right that corresponds to slider location
 8 Tab Widget: selectable tab for different widgets 
 
-Details of each block:
+Details of each block: Detailed descriptions of QT GUI blocks (including these) can be found at 
+https://github.com/inls718/gnuradio/blob/master/gr-qtgui/doc/qtgui.dox
+Our QT GUI list is described in lines 248-268.
 
 1 Checkbox:
 GRC XML file: https://github.com/inls718/gnuradio/blob/master/gr-qtgui/grc/qtgui_check_box.xml
