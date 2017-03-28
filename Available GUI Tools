@@ -24,6 +24,9 @@ Python file: still looking...
 GRC XML file: https://github.com/inls718/gnuradio/blob/master/gr-qtgui/grc/qtgui_entry.xml
 Python file: still looking...
 
+4 Label:
+GRC XML file: https://github.com/inls718/gnuradio/blob/master/gr-qtgui/grc/qtgui_label.xml
+
 5 Message Editor: 
 GRC XML file: https://github.com/inls718/gnuradio/blob/master/gr-qtgui/grc/qtgui_edit_box_msg.xml
 Python file: still looking...
