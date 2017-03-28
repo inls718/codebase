@@ -7,3 +7,9 @@ QT GUI List:
 6 Push Button: displays large gray button
 7 Range: Slider with number box on right that corresponds to slider location
 8 Tab Widget: selectable tab for different widgets 
+
+Details of each block:
+
+1 Checkbox:
+GRC XML file: https://github.com/inls718/gnuradio/blob/master/gr-qtgui/grc/qtgui_check_box.xml
+Python file: 
