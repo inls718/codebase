@@ -33,3 +33,7 @@ Python file: still looking...
 
 6 Push Button:
 GRC XML file: https://github.com/inls718/gnuradio/blob/master/gr-qtgui/grc/qtgui_push_button.xml
+
+7 Range: 
+GRC XML file: https://github.com/gnuradio/gnuradio/blob/master/gr-qtgui/grc/qtgui_range.xml
+
